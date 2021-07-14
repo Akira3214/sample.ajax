@@ -8,16 +8,6 @@
 
 </head>
 <body>
-<!DOCTYPE html>
-<html>
-<head>
-<meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
-<meta charset="utf-8">
-<link rel="shortcut icon" href="https://lightbox.sakura.ne.jp/homepage/WinOfSql.ico">
-
-
-</head>
-<body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 <script>
@@ -26,10 +16,10 @@ $(function(){
     $("#btn").on( "click", function(){
 
         formData = {};
-        formData["param1"] = "テスト";
+        formData["param1"] = "文字列";
 
         $.ajax({
-            url: "http://localhost/app/form-action-json.php",
+            url: "form-action-json.php",
             type: "GET",
             data: formData,
             cache: false
@@ -58,7 +48,3 @@ $(function(){
 <input id="btn" name="btn" type="button" value="実行">
 <div id="content" style="white-space:pre">
 </div>
-
-</body>
-</html></body>
-</html>
